@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repositories;
+namespace MrAtiebatie;
 
 use Illuminate\Support\Str;
 

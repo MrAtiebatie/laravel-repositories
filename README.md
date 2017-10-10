@@ -26,6 +26,7 @@ In this example I assume that you already have a model named Product.
 
 namespace App\Repositories;
 
+use MrAtiebatie\Repository;
 use Illuminate\Database\Eloquent\Model;
 
 /**
