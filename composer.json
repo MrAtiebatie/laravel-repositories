@@ -1,0 +1,21 @@
+{
+    "name": "mratiebatie/laravel-repositories",
+    "description": "Laravel repositories using the native Eloquent functions",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sjors van Dongen",
+            "email": "sitesjors@hotmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "illuminate/support": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "MrAtiebatie\\": "src"
+        }
+    }
+}
