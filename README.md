@@ -1,5 +1,8 @@
 # Laravel Eloquent Repositories
 
+> Heads up! This is not yet another base class where there are some methods trying to act as Eloquent replacement.
+This is an implementation where you can use all Eloquent features on a custom class!
+
 Using Repositories in Laravel can be a bit confusing. If you create custom classes functioning as repositories
 you can't really use Eloquent anymore, which is one of the best features of Laravel. That's why I was looking for another
 way for using the repository pattern in Laravel. I came up with this approach and thought I would share it.
