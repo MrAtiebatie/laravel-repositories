@@ -46,7 +46,7 @@ class ProductRepository extends Model
     /**
      * Constructor
      */
-    function __construct()
+    public function __construct()
     {
         $this->model = app('App\Models\Product');
     }
