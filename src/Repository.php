@@ -28,10 +28,6 @@ trait Repository
      */
     public function getTable()
     {
-        if (empty($this->model->table)) {
-            return str_replace('\\', '', Str::snake(Str::plural(class_basename($this->model))));
-        }
-
-        return $this->model->table;
+        return $this->model->getTable();
     }
 }
