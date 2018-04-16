@@ -14,7 +14,6 @@ trait Repository
      */
     public function __call($method, $arguments)
     {
-        // dd($this->model->table);
         if (method_exists($this, $method)) {
             return parent::__call('setModel', [$this->model])->setTable($this->model->table)->$method(...$arguments);
         } else {
