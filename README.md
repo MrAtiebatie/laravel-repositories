@@ -48,7 +48,18 @@ class ProductRepository extends Model
      */
     public function __construct()
     {
-        $this->model = app('App\Models\Product');
+        $this->model = app(\App\Models\Product::class);
+    }
+
+    /**
+     * Find published products by SKU
+     * @param  {int} $sku
+     * @return {Product}
+     */
+    public function findBySku(int $sku): Product {
+        return this->whereIsPublished(1)
+                   ->whereSku($sku)
+                   ->first();
     }
 }
 ```
@@ -71,7 +82,11 @@ Now you can use the Eloquent methods on the repository, like you would use them 
 
 $router->get('/', function (\App\Repositories\ProductRepository $productRepo) {
 
+    // Use any Eloquent feature directly
     $productRepo->all()->dd();
+
+    // Use your custom repository methods
+    echo $productRepo->findBySku(12345)->name;
 
     // You can even query relations
     echo $productRepo->first()->category;

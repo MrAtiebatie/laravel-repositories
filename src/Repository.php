@@ -2,8 +2,6 @@
 
 namespace MrAtiebatie;
 
-use Illuminate\Support\Str;
-
 /**
  * Repository
  */
