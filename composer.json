@@ -11,9 +11,6 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {
-        "illuminate/support": "*"
-    },
     "autoload": {
         "psr-4": {
             "MrAtiebatie\\": "src"
