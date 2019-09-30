@@ -57,7 +57,7 @@ class ProductRepository extends Model
      * @return {Product}
      */
     public function findBySku(int $sku): Product {
-        return this->whereIsPublished(1)
+        return $this->whereIsPublished(1)
                    ->whereSku($sku)
                    ->first();
     }
