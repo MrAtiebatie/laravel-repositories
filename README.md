@@ -19,7 +19,7 @@ After installation you can start using the repository pattern with Laravel.
 
 ## Make a repository class
 
-This package provide a new Artisan command to create a repository class. All the classes will be generated on the `App\Repositorires` folder, if this folder is missing, it will be generated automatically.
+This package provide a new Artisan command to create a repository class. All the classes will be generated on the `App\Repositories` folder, if this folder is missing, it will be generated automatically.
 
 ```
 php artisan make:repository ProductRepository
