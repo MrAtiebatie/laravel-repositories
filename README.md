@@ -44,7 +44,7 @@ Used the command
 ``` php
 <?php
 
-namespace App\Repository;
+namespace App\Repositories;
 
 use MrAtiebatie\Repository;
 use App\Models\Product; 
@@ -71,7 +71,7 @@ class ProductRepository
 }
 ```
 The magic appears with the `Repository` trait, and the `protected $model` property.
-When you call an Eloquent method on you repository, this call will fallback to your model. <br>
+When you call an Eloquent method on your repository, this call will fallback to your model. <br>
 So all the Eloquent methods like `where`, `all`, `find`, or your custom scopes are available in your repository.
 
 The suggested way to initialize the `$model` property is by using the IoC container.
@@ -80,7 +80,7 @@ This way you can always replace models for Mock objects when making unit tests.
 ``` php
 <?php
 
-namespace App\Repository;
+namespace App\Repositories;
 
 use MrAtiebatie\Repository;
 use App\Models\Product; 
