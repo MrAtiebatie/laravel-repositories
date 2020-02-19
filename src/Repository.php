@@ -8,23 +8,11 @@ namespace MrAtiebatie;
 trait Repository
 {
     /**
-     * On method call
+     * When the called method doesn't exists on the Repository,
+     * Call it on the model
      */
-    public function __call($method, $arguments)
+    public function __call($method, $parameters)
     {
-        if (method_exists($this, $method)) {
-            return parent::__call('setModel', [$this->model])->setTable($this->model->table)->$method(...$arguments);
-        } else {
-            return $this->model->$method(...$arguments);
-        }
-    }
-
-    /**
-     * Get table
-     * @return string
-     */
-    public function getTable()
-    {
-        return $this->model->getTable();
+        return $this->model->$method(...$parameters);
     }
 }

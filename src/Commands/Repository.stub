@@ -1,0 +1,27 @@
+<?php
+
+namespace App\Repository;
+
+use MrAtiebatie\Repository;
+use [model_namespace]; [comment_namespace_when_no_model]
+
+class DummyClass
+{
+    use Repository;
+
+    /**
+     * The model being queried.
+     *
+     * @var Model
+     */
+    protected $model;
+
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        [comment_when_no_model]
+        $this->model = app([model]::class);
+    }
+}
