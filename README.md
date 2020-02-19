@@ -240,4 +240,5 @@ Route::get('/', function () {
 ## Credits
 
 Sjors van Dongen (sitesjors@hotmail.com)
+
 Yannick Leone (yannick.leone@gmail.com)
