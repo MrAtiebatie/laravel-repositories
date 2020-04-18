@@ -17,7 +17,7 @@
         }
     },
     "require": {
-        "illuminate/console": "*"
+        "illuminate/console": "^7.0"
     },
     "extra": {
         "laravel": {
