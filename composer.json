@@ -1,7 +1,7 @@
 {
     "version": "1.0.9",
     "name": "mratiebatie/laravel-repositories",
-    "description": "Laravel repositories using the native Eloquent functions",
+    "description": "Laravel repositories using the native Eloquent functions.",
     "type": "library",
     "license": "MIT",
     "authors": [
