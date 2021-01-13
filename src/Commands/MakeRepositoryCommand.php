@@ -112,7 +112,7 @@ class MakeRepositoryCommand extends GeneratorCommand
             $stub = str_replace('[comment_namespace_when_no_model]', '// Don\'t forget to update the model\'s namespace', $stub);
             $stub = str_replace('[comment_when_no_model]', '// Don\'t forget to update the model\'s name', $stub);
         } else {
-            $stub = str_replace('[comment_namespace_when_no_model]', '', $stub);
+            $stub = str_replace(' [comment_namespace_when_no_model]', '', $stub);
             $stub = str_replace('[comment_when_no_model]', '// setup the model', $stub);
         }
 
